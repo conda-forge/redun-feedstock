@@ -1,5 +1,5 @@
 {% set name = "redun" %}
-{% set version = "0.8.7" %}
+{% set version = "0.8.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redun-{{ version }}.tar.gz
-  sha256: 2502eb0149d35902eb6d5e7dcaec72468e558a21a0f56fc5d3047c42ccfade85
+  sha256: b682006f26994f40277271503f7e1bfda11d6eff4e8b96f6b2632ebf076c699a
 
 build:
   noarch: python
