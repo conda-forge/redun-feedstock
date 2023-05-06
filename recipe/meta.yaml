@@ -24,12 +24,21 @@ requirements:
     - aiohttp >=3.7.4,<4
     - alembic >=1.4
     - boto3 >=1.16.63
-    - botocore >=1.22.8,<1.28.0
+    - botocore >=1.22.8,!=1.28.0
+    - dataclasses >=0.8
     - gcsfs >=2021.4.0
     - python >=3.6
     - python-dateutil >=2.8
+    - requests >=2.27.1
     - s3fs >=2021.11.1
-    - sqlalchemy >=1.3.17,<2
+    - sqlalchemy >=1.4.0,<2.1
+    - types-dataclasses >=0.6.6
+    
+    # Needed for aiobotocore[awscli]
+    - awscli >=1.27.76
+    
+    # Upstream script by deafult enables psycopg option
+    - psycopg >=2.8
 
 test:
   imports:
