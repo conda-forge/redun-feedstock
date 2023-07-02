@@ -1,11 +1,11 @@
-About redun
-===========
+About redun-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/redun-feedstock/blob/main/LICENSE.txt)
 
 Home: https://insitro.github.io/redun/index.html
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/redun-feedstock/blob/main/LICENSE.txt)
 
 Summary: Yet another redundant workflow engine.
 
