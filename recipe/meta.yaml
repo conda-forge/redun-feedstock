@@ -1,5 +1,5 @@
 {% set name = "redun" %}
-{% set version = "0.16.2" %}
+{% set version = "0.17.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redun-{{ version }}.tar.gz
-  sha256: a3411afde9414d8d1335f5a84f5ae9522a2ce7c679ba0e118d4545db49be7151
+  sha256: d4a6f5434ef528aced8774e4dd117d167e73fbe860bf109d67964124650b0d9b
 
 build:
   noarch: python
@@ -18,28 +18,29 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
+    - python >=3.8
     - aiobotocore >=2.0.1
     - aiohttp >=3.7.4,<4
     - alembic >=1.4
     - boto3 >=1.16.63
     - botocore >=1.22.8,!=1.28.0
-    - dataclasses >=0.8
     - fancycompleter >=0.9.1
     - gcsfs >=2021.4.0
-    - python >=3.7
+    - s3fs >=2021.11.1
+    - sqlalchemy >=1.4.0,<2.1
     - python-dateutil >=2.8
     - pyyaml !=6.0.0,!=5.4.0,!=5.4.1
     - requests >=2.27.1
     - rich >=13.3.5
-    - s3fs >=2021.11.1
-    - sqlalchemy >=1.4.0,<2.1
     - textual >=0.24.1
-    - types-dataclasses >=0.6.6
-
+      
     # Needed for aiobotocore[awscli]
     - awscli >=1.27.76
+
+    # "awscli 2.13.34 has requirement cryptography<40.0.2,>=3.3.2"
+    - cryptography <40.0.2,>=3.3.2
 
     # Upstream script by deafult enables psycopg option
     - psycopg >=2.8
