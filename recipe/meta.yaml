@@ -1,5 +1,5 @@
 {% set name = "redun" %}
-{% set version = "0.17.0" %}
+{% set version = "0.19.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redun-{{ version }}.tar.gz
-  sha256: d4a6f5434ef528aced8774e4dd117d167e73fbe860bf109d67964124650b0d9b
+  sha256: 3d72b5abd6d459307681697905bcb1040c2c9437897924074ea037eaa3be391b
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ requirements:
     - requests >=2.27.1
     - rich >=13.3.5
     - textual >=0.24.1
-      
+
     # Needed for aiobotocore[awscli]
     - awscli >=1.27.76
 
