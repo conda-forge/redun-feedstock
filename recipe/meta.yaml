@@ -33,7 +33,7 @@ requirements:
     - pyyaml !=6.0.0,!=5.4.0,!=5.4.1
     - requests >=2.27.1
     - rich >=13.3.5
-    - textual >=0.24.1
+    - textual >=0.63.0
 
     # Needed for aiobotocore[awscli]
     - awscli >=1.27.76
