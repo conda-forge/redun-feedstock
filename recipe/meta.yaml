@@ -1,5 +1,5 @@
 {% set name = "redun" %}
-{% set version = "0.21.0" %}
+{% set version = "0.22.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redun-{{ version }}.tar.gz
-  sha256: 68a5e03591530be448eaa0b4b8a190bfbc633f31f6a7ebeee2ec324a830f7240
+  sha256: d679c1b5e6453832b3f6427c97d9e76ec30163a9df5061704b211028a6744510
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - aiobotocore >=2.0.1
