@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redun
-  version: 0.27.0
+  version: "0.28.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redun-${{ version }}.tar.gz
-  sha256: f360c3c19eee3cb6de6c9fa0f9dd297821b809b3cf7d8b9ea49e36e7c9780adf
+  sha256: 401971c10b2c4777296a7b2b88a30de9ba9c01695c5e11f24e3b7776d271c385
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - botocore >=1.22.8,!=1.28.0
     - fancycompleter >=0.9.1
     - s3fs >=2021.11.1
-    - sqlalchemy >=1.4.0,<2.1
+    - sqlalchemy >=2,<3
     - python-dateutil >=2.8
     - pyyaml !=6.0.0,!=5.4.0,!=5.4.1
     - requests >=2.27.1
