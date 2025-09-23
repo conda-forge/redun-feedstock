@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redun
-  version: "0.28.0"
+  version: "0.32.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redun-${{ version }}.tar.gz
-  sha256: 401971c10b2c4777296a7b2b88a30de9ba9c01695c5e11f24e3b7776d271c385
+  sha256: 6fe8a1a918fc0d3f797669b7b93d88a9ab877ebc636622190e3c47407f8ddfb7
 
 build:
   number: 0
